@@ -1,4 +1,4 @@
 # BeyondThePage
 
-Collaborators: Tevin Zhuo (https://github.com/teazhi)
-Current Progress: Dependency Issue... C
+Collaborators: Tevin Zhuo (https://github.com/teazhi)  
+Current Progress: Dependency Error...Will be fixed soon
