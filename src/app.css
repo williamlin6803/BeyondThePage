@@ -1,0 +1,225 @@
+:root {
+  --blue: #0039a6;
+  --red: #DA291C;
+}
+
+.appTitle {
+  display: flex;
+  left: 50%;
+  width: 200px;
+  bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+  color: white;
+  background: linear-gradient(45deg, var(--blue), var(--red));
+  color: white;
+  padding: min(1.5%, 8px);
+  border-radius: 30px;
+  font-size: 1.5em;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  width: 215px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+label {
+  font-size: 20px;
+  width: max-content;
+  color: var(--red);
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.desc {
+  font-size: 14px;
+}
+
+.star {
+  color: gold;
+}
+
+.username {
+  font-size: 14px;
+}
+
+.date {
+  font-size: 12px;
+  color: grey;
+}
+
+form {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(88, 87, 87);
+}
+
+.pinForm{
+  width: 97%;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 12px;
+  color: rgb(185, 184, 184);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  font-size: 90%;
+  border-bottom: 1px solid gray;
+  resize: none;
+}
+
+.submitButton {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--red);
+  cursor: pointer;
+}
+
+.buttons,
+.logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.button:focus{
+  outline: none;
+}
+
+.logout {
+  background-color: var(--red);
+  padding: 8px 14px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.help {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-evenly;
+  right: 90px;
+  top: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background-color: green;
+  padding: 6px 10px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.helpList {
+  font-size: 0.7rem;
+  font-weight: normal;
+  padding: 2px;
+}
+
+.help:hover{
+  background-color: rgb(1, 100, 1);
+}
+
+.locationSpan {
+  margin: 5px;
+  margin-top: 2px;
+}
+
+.location {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  top: 90px;
+  left: 15px;
+  padding: 8px 10px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.location:hover{
+  background-color: rgb(0, 85, 0);
+}
+
+.userInfo {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background: linear-gradient(45deg, var(--blue), var(--red));
+  color: white;
+  padding: min(1%, 10px);
+  border-radius: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 160px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login{
+  background-color: var(--red);
+  margin-right: 10px;
+  padding: 8px 14px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+.login:hover, .logout:hover {
+  background-color: #ae1b10;
+}
+.register:hover {
+  background-color: #004ddd;
+}
+
+.register{
+  background-color: var(--blue);
+  padding: 8px 14px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 641px) {
+  .appTitle {
+    position: relative;
+    top: 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .location {
+    height: 50px;
+    width: 50px;
+  }
+  .appTitle {
+    position: absolute;
+    bottom: 10px;
+  }
+}
